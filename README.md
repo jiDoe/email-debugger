@@ -3,6 +3,7 @@
 Setup
 
   * Install docker and phoenix
+  * Build docker container with `docker-compose build`
   * Run docker container with `docker-compose run --rm --service-ports web sh`
   * Install dependencies with `mix deps.get`
 
