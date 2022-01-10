@@ -1,0 +1,10 @@
+<div style="columns: 2;">
+  <label> template </label>
+  <textarea phx-keydown="update_template" phx-update="ignore" phx-debounce="blur"></textarea>
+  <label> assigns </label>
+  <textarea phx-keydown="update_assigns" phx-update="ignore" phx-debounce="blur"></textarea>
+  <div>Current State: <pre><%= inspect(@env, pretty: true) %></pre></div>
+  <div id="renderer" phx-hook="Renderer" data-content="<%= @output %>">
+    <iframe id="iframe" width="888px;" height="1000px;"></iframe>
+  </div>
+</div>
