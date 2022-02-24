@@ -9,3 +9,6 @@ services:
       - ${PWD}:/home/user/app:z
     ports:
       - 4000:4000
+    stdin_open: true
+    tty: true
+    command: iex -S mix phx.server
