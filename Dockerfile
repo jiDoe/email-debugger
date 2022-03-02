@@ -1,7 +1,7 @@
 FROM elixir:1.12.2-alpine
 
 RUN apk update && apk upgrade && \
-    apk add --no-cache inotify-tools npm && \
+    apk add --no-cache inotify-tools yarn npm && \
     mkdir -p /home/user/app
 
 WORKDIR /home/user/app
