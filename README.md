@@ -4,7 +4,7 @@ Setup
 
   * Install docker and phoenix
   * Build docker container with `docker-compose build`
-  * Run setup commant with `docker-compose run web sh -c 'mix do deps.get, deps.compile && cd assets && npm install'`
+  * Run setup commant with `docker-compose run web sh -c 'mix do deps.get, deps.compile && cd assets && yarn install'`
   * Run docker container with `docker-compose run --rm --service-ports web sh`
 
 To start your Phoenix server:
